@@ -1,19 +1,14 @@
-language: php
- 
+language: php 
 services:
   - mysql
- 
 cache:
   directories:
     - $HOME/.composer/cache
- 
 php:
   - 7.4snapshot
   - 7.3
   - 7.2
- 
 install:
   - composer install --prefer-dist --no-interaction
- 
 script:
   - ./vendor/bin/phpunit
