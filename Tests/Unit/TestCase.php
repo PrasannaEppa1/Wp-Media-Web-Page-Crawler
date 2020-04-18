@@ -17,7 +17,7 @@ class TestCase extends PHPUnitTestCase {
 	 * Set up the test fixtures
 	 *
 	 */
-	protected function setUp(): void {
+	protected function setUp() {
 		parent::setUp();
 		Monkey\setUp();
 		// A few common passthrough
@@ -35,7 +35,7 @@ class TestCase extends PHPUnitTestCase {
 	 *
 	 * @return void
 	 */
-	public function tearDown(): void {
+	public function tearDown() {
 		Monkey\tearDown();
 		parent::tearDown();
 	}
