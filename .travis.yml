@@ -38,7 +38,7 @@ before_install:
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - composer remove --dev phpstan/phpstan szepeviktor/phpstan-wordpress
 install:
-  - composer install --prefer-dist --no-interaction
+  - composer update
 before_script:
 - |
   if [[ ! -z "$WP_VERSION" ]] ; then
