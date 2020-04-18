@@ -1,36 +1,35 @@
 {
-	"name": "wp-media/package-template",
-	"description": "Repository template for our packages",
-	"homepage": "https://github.com/wp-media/package-template",
-	"license": "GPL-2.0+",
-	"authors": [
-		{
-			"name": "WP Media",
-			"email": "contact@wp-media.me",
-			"homepage": "https://wp-media.me"
-		}
-	],
-	"type": "library",
+	"name": "prasannaeppa/wpmedia-web-page-crawler",
+    "description": "Crawls home page of a website and shows all internal links",
+    "keywords": ["wordpress", "plugin", "webpagecrawler"],
+    "license": "This software is NOT to be distributed, but can be INCLUDED in WP themes: Premium or Contracted.",
+    "authors": [
+      {
+        "name": "Prasanna Eppa",
+        "email": "prasanna.eppa@gmail.com"
+      }
+    ],
+    "type": "wordpress-plugin",
+    
 	"config": {
 		"sort-packages": true
 	},
 	"support": {
-		"issues": "https://github.com/wp-media/package-template/issues",
 		"source": "https://github.com/wp-media/package-template"
 	},
 	"require-dev": {
-		"php": "^5.6 || ^7",
-		"brain/monkey": "^2.0",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-		"phpcompatibility/phpcompatibility-wp": "^2.0",
-		"phpunit/phpunit": "^5.7 || ^7",
-		"wp-coding-standards/wpcs": "^2",
-		"wp-media/phpunit": "dev-master"
+		"php": "*",
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"brain/monkey": "^2.4",
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+		"wp-coding-standards/wpcs": "*"
 	},
 	"autoload": {},
 	"autoload-dev": {},
 	"scripts": {
-		"test-unit": "\"vendor/bin/wpmedia-phpunit\" unit path=Tests/Unit",
+		"test-unit": "\"vendor/bin/wpmedia-phpunit\" unit path=Tests/Unit/",
 		"test-integration": "\"vendor/bin/wpmedia-phpunit\" integration path=Tests/Integration/",
 		"run-tests": [
 			"@test-unit",
