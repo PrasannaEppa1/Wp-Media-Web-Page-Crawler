@@ -21,7 +21,7 @@
 		"php": "^5.6 || ^7",
 		"phpcompatibility/phpcompatibility-wp": "*",
 		"brain/monkey": "^2.4",
-        "phpunit/phpunit": "^5.7 || ^7",
+        "phpunit/phpunit": "^5.6 || ^7",
         "squizlabs/php_codesniffer": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "*",
 		"wp-coding-standards/wpcs": "*"
