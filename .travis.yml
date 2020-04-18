@@ -10,10 +10,6 @@ branches:
   only:
   - master
   - develop
-cache:
-  directories:
-  - vendor
-  - $HOME/.composer/cache
 matrix:
   fast_finish: true
   include:
