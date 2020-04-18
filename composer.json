@@ -18,10 +18,10 @@
 		"source": "https://github.com/wp-media/package-template"
 	},
 	"require-dev": {
-		"php": "^5.6 || ^7",
+		"php": "*",
 		"phpcompatibility/phpcompatibility-wp": "*",
 		"brain/monkey": "^2.4",
-        "phpunit/phpunit": "^5.7 || ^7",
+        "phpunit/phpunit": "*",
         "squizlabs/php_codesniffer": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "*",
 		"wp-coding-standards/wpcs": "*"
