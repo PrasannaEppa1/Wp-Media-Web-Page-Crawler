@@ -87,6 +87,7 @@ class Autoloader {
 	public function autoload( $class ) {
 
 		$class = str_replace( '\\', DIRECTORY_SEPARATOR, $class );
+		echo $class;exit;
 		if ( ! class_exists( $class ) ) {
 			$class_arr       = explode( '\\', $class );
 			$class_full_path = $this->plugin_path . 'includes/';
