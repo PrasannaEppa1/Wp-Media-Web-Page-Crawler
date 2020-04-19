@@ -53,7 +53,9 @@ function bootstrap_integration_suite( $wp_tests_dir ) {
 		'muplugins_loaded',
 		function() {
 			// Load the plugin.
+			require WPMEDIA_CRAWLER_PLUGIN_ROOT . '/includes/Actions/class-crawler.php';
 			require WPMEDIA_CRAWLER_PLUGIN_ROOT . '/wp-media-web-page-crawler.php';
+			
 		}
 	);
 
