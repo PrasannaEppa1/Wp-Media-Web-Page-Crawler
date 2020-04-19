@@ -3,7 +3,7 @@ namespace WpMediaCrawler\Tests\Unit;
 
 use WpMediaCrawler\Tests\Unit\TestCase as TestCase;
 use \Brain\Monkey\Functions;
-use WpMedia\Crawler\Autoloader as Autoloader;
+use WpMedia\WebPage\Crawler\Autoloader as Autoloader;
 use Actions\Crawler as Crawler;
 
 class AutoloaderTest extends TestCase {
