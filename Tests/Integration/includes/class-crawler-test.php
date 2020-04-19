@@ -11,5 +11,12 @@ class CrawlerTest extends TestCase {
 		
 		Crawler::enqueue_scripts_and_styles();
 		$this->assertTrue( wp_script_is( 'wpmedia-crawler-js' ) );
+		$this->assertFalse( wp_script_is( 'wpmedia-crawler-css' ) );
+	}
+
+	public function test_register_options_page() {
+		Crawler::register_options_page();
+		//global $admin_page_hooks;
+		$this->assertTrue(!empty($GLOBALS['admin_page_hooks']['wpmediacrawler']));
 	}
 }
