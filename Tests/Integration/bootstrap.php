@@ -9,7 +9,7 @@ namespace WpMedia\Crawler\Tests\Integration;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 require_once __DIR__ . '/../../vendor/antecedent/patchwork/Patchwork.php';
-define( 'WPMEDIA_CRAWLER_PLUGIN_ROOT', dirname( __DIR__ ) . "/" );
+define( 'WPMEDIA_CRAWLER_PLUGIN_ROOT', __DIR__ . '/../../' );
 
 /**
  * Get the WordPress' tests suite directory.
