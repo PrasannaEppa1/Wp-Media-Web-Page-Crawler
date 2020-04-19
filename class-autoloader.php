@@ -61,7 +61,7 @@ class Autoloader {
 
 		spl_autoload_register( [ $this, 'autoload' ] );
 		// Initiate the Crawler.
-		Crawler::init_hooks();
+		\Actions\Crawler::init_hooks();
 	}
 
 	/**
@@ -87,7 +87,6 @@ class Autoloader {
 	public function autoload( $class ) {
 
 		$class = str_replace( '\\', DIRECTORY_SEPARATOR, $class );
-		echo $class;exit;
 		if ( ! class_exists( $class ) ) {
 			$class_arr       = explode( '\\', $class );
 			$class_full_path = $this->plugin_path . 'includes/';
@@ -98,7 +97,6 @@ class Autoloader {
 					$class_full_path .= $folder . '/';
 				}
 			}
-			echo $class_full_path;exit;
 			if ( file_exists( $class_full_path ) ) {
 				require_once $class_full_path;
 			}
