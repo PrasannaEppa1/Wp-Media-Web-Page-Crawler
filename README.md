@@ -1,4 +1,4 @@
-=== Wp Media Web Page Crawler ===
+### Wp Media Web Page Crawler
 Contributors: prasannaeppa
 Tags: wp-media-web-page-crawler
 Requires at least: 5.0
@@ -8,7 +8,7 @@ License: GPLv3 or later
 
 Wp Media Web Page Crawler is a plugin which crawls all internal links of website and shows in sitemap page.
 
-== Description ==
+### Description
 
 Wp Media Web Page Crawler which crawls all internal links of website and shows in sitemap page. It will automatically crawls the links of home page every one hour and gives option for admin to check the link to improve their SEO rankings.
 
@@ -19,18 +19,16 @@ Major features in Wp Media Web Page Crawler include:
 * Generates a sitemap url which provides visitor to check it in frontend.
 * Automatically runs crawler task every one hour, so that sitemap links are updated based on dynamic content of home page.
 
-== Installation ==
-
-### INSTALL WP MEDIA WEB PAGE CRAWLER MANUALLY
+### Installation
 
 * Download the plugin from this link https://github.com/PrasannaEppa1/Wp-Media-Web-Page-Crawler.
 * Place it in wp-content/plugins folder of your wordpress instance.
 * Activate the plugin through the 'Plugins' menu in Wordpress.
 * Make sure the storage folder present in plugin folder is writable.
 
-== Usage Instructions ==
+### Usage Instructions
 
-### FOR ADMIN
+== FOR ADMIN ==
 
 * Under the Settings Menu in admin, you can see a new menu item called "Wp Media Crawler".
 * Going to that sub menu, two buttons "Start Crawler" and "Reset Crawler" are shown.
@@ -39,6 +37,6 @@ Major features in Wp Media Web Page Crawler include:
 * Reset Crawler button is used to reset everything like stopping all triggers,deleting all storage files.
 * Resetting is helpful when there is some error and you want to reset everything.
 
-### FOR VISITOR
+== FOR VISITOR ==
 
 * When you visit the url "{yourdomain/wmsitemap}", a page with the list of links that are crawled are shown (similar to sitemap page).
