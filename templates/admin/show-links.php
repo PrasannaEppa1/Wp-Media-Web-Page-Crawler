@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php foreach ( $links as $wpmedia_key => $wpmedia_page_link ) : ?>
 	<tr>
 	<th scope="row"><?php echo __( 'Link', 'wp-media-web-page-crawler' ); ?> <?php echo $wpmedia_key + 1; ?></th>
-	<td><a href = "<?php echo $wpmedia_page_link; ?>"><?php echo $wpmedia_page_link; ?></a></td>
+	<td><a href = "<?php echo $wpmedia_page_link; ?>" target = "_blank"><?php echo $wpmedia_page_link; ?></a></td>
 	</tr> 
 	<?php endforeach; ?>
 	</tbody>
