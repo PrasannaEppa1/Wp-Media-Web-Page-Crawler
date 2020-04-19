@@ -39,6 +39,7 @@
 		"phpcs": "phpcs --basepath=.",
 		"phpcs-changed": "./bin/phpcs-changed.sh",
 		"phpcs:fix": "phpcbf",
-		"unit-test":"cd Tests/Unit && phpunit"
+		"unit-test": "cd Tests/Unit && phpunit",
+		"integration-test": "cd Tests/Integration && phpunit"
 	}
 }
