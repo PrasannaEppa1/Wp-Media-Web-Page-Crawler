@@ -7,7 +7,7 @@ use WP_UnitTestCase;
 
 
 
-abstract class TestCase extends WP_UnitTestCase {
+class TestCase extends WP_UnitTestCase {
 	/**
 	 * Prepares the test environment before each test.
 	 */
