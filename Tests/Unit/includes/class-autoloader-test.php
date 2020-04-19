@@ -1,5 +1,5 @@
 <?php
-namespace WpMedia\Crawler;
+namespace WpMediaCrawler\Tests\Unit;
 
 use WpMediaCrawler\Tests\Unit\TestCase as TestCase;
 use \Brain\Monkey\Functions;
@@ -18,7 +18,7 @@ class AutoloaderTest extends TestCase {
 
 	}
 	/**
-	 * Method to test get instance.
+	 * Method to test plugin setup.
 	 * @return void
 	 */
 	public function test_plugin_setup() {
@@ -42,7 +42,10 @@ class AutoloaderTest extends TestCase {
 		$autoloader = Autoloader::get_instance(); 
 		$autoloader->plugin_setup();
 	}
-
+	/**
+	 * Method to test load_language.
+	 * @return void
+	 */
 	public function test_load_language() {
 		Functions\expect( 'load_plugin_textdomain' )
 				->with( 'wp-media-web-page-crawler', false, "plugin_path" )
@@ -51,7 +54,10 @@ class AutoloaderTest extends TestCase {
 		$autoloader->load_language('wp-media-web-page-crawler');
 
 	}
-
+	/**
+	 * Method to test plugin_activation.
+	 * @return void
+	 */
 	public function test_plugin_activation() {
 		Functions\expect( 'flush_rewrite_rules' )
 					->andReturn( true );	
@@ -59,7 +65,10 @@ class AutoloaderTest extends TestCase {
 		$autoloader->plugin_activation();
 
 	}
-
+	/**
+	 * Method to test plugin_deactivation.
+	 * @return void
+	 */
 	public function test_plugin_deactivation() {
 		Functions\expect( 'flush_rewrite_rules' )
 					->andReturn( true );	

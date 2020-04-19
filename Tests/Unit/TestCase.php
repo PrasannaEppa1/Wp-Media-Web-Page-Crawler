@@ -10,7 +10,6 @@ use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
  * It also uses the snapshot trait
  */
 class TestCase extends PHPUnitTestCase {
-	//use MatchesSnapshots;
 	use MockeryPHPUnitIntegration;
 
 	/**
