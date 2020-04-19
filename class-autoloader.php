@@ -97,6 +97,7 @@ class Autoloader {
 					$class_full_path .= $folder . '/';
 				}
 			}
+			echo $class_full_path;exit;
 			if ( file_exists( $class_full_path ) ) {
 				require_once $class_full_path;
 			}
