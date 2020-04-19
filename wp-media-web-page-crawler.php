@@ -2,21 +2,20 @@
 /**
  * Plugin Name
  *
- * @package           Wpmedia_Web_Page_Crawler
+ * @package           WpMedia\WebPage\Crawler
  * @author            PrasannaEppa
  * @copyright         2020 PrasannaEppa
- * @license           GPL-2.0-or-later
+ * @license           GPL-3.0-or-later
  *
  * @wordpress-plugin
  * Plugin Name:       Wp Media Web Page Crawler
- * Plugin URI:        https://example.com/plugin-name
+ * Plugin URI:        https://github.com/PrasannaEppa1/Wp-Media-Web-Page-Crawler
  * Description:       A plugin to crawl all internal links of home page of website.
  * Version:           1.0.0
  * Author:            PrasannaEppa
- * Author URI:        https://example.com
  * Text Domain:       wp-media-web-page-crawler
- * License:           GPL v2 or later
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * License:           GPL v3 or later
+ * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
  */
 
 /*
@@ -46,7 +45,7 @@ define( 'WP_MEDIA_CRAWLER_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
 
 require_once WP_MEDIA_CRAWLER_PLUGIN_DIR . 'class-autoloader.php';
 
-use WpMedia\Crawler\Autoloader as Autoloader;
+use WpMedia\Webpage\Crawler\Autoloader as Autoloader;
 add_action( 'plugins_loaded', [ Autoloader::get_instance(), 'plugin_setup' ] );
 register_activation_hook( __FILE__, [ Autoloader::get_instance(), 'plugin_activation' ] );
 register_deactivation_hook( __FILE__, [ Autoloader::get_instance(), 'plugin_deactivation' ] );

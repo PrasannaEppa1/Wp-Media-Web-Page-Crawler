@@ -1,7 +1,7 @@
 <?php
 /** Crawler file
  *
- * @package Wpmedia_Web_Page_Crawler
+ * @package Actions
  */
 
 namespace Actions;
@@ -47,11 +47,11 @@ class Crawler {
 	 * @return void
 	 */
 	public static function enqueue_scripts_and_styles() {
-		wp_register_script( 'wpmedia-crawler-js', WP_MEDIA_CRAWLER_PLUGIN_URL . '/assets/js/crawler.js', [ 'jquery' ], '1.0.0', true );
+		wp_register_script( 'wpmedia-crawler-js', WP_MEDIA_CRAWLER_PLUGIN_URL . '/assets/js/crawler.min.js', [ 'jquery' ], '1.0.0', true );
 		wp_localize_script( 'wpmedia-crawler-js', 'myAjax', [ 'ajaxurl' => admin_url( 'admin-ajax.php' ) ] );
 		wp_enqueue_script( 'wpmedia-crawler-js' );
 
-		wp_register_style( 'wpmedia-crawler-css', WP_MEDIA_CRAWLER_PLUGIN_URL . '/assets/css/crawler.css', false, '1.0.0' );
+		wp_register_style( 'wpmedia-crawler-css', WP_MEDIA_CRAWLER_PLUGIN_URL . '/assets/css/crawler.min.css', false, '1.0.0' );
 		wp_enqueue_style( 'wpmedia-crawler-css' );
 
 	}

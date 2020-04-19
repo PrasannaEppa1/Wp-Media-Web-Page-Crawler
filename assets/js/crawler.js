@@ -44,6 +44,7 @@ jQuery("#reset-crawler").click(function() {
 			jQuery(".loader").hide();
 			jQuery("#links-section").html(response);
 			jQuery("#start-crawler").removeAttr("disabled");
+			jQuery("#view-links").hide();
 		},
 		error: function (response) {
 			jQuery(".loader").hide();

@@ -4,7 +4,7 @@
  * @package WpMedia\WebPage\Crawler
  */
 
-namespace WpMedia\Crawler;
+namespace WpMedia\WebPage\Crawler;
 
 use \Actions\Crawler as Crawler;
 /**
