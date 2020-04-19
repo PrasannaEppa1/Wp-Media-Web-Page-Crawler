@@ -61,7 +61,7 @@ class Autoloader {
 
 		spl_autoload_register( [ $this, 'autoload' ] );
 		// Initiate the Crawler.
-		\Actions\Crawler::init_hooks();
+		Crawler::init_hooks();
 	}
 
 	/**
