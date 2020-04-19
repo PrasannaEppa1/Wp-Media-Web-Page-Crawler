@@ -17,7 +17,8 @@ class CrawlerTest extends TestCase {
 	public function test_register_options_page() {
 		Crawler::register_options_page();
 		//global $admin_page_hooks;
-		echo "<pre>";print_r($GLOBALS['admin_page_hooks']);exit;
+		global $submenu;
+		echo "<pre>";print_r($submenu);exit;
 		$this->assertTrue(!empty($GLOBALS['admin_page_hooks']['wpmediacrawler']));
 	}
 }
