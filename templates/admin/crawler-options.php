@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php
 $wpmedia_start_disabled = '';
 $wpmedia_hide_view_btn  = true;
-if ( false !== get_option( 'wpmedia_crawler_started', 'wp-media-web-page-crawler' ) ) {
+if ( false !== get_option( 'wpmedia_crawler_started' ) ) {
 	$wpmedia_start_disabled = 'disabled';
 	$wpmedia_hide_view_btn  = false;
 }

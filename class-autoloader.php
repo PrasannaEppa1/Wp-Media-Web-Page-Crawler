@@ -123,7 +123,7 @@ class Autoloader {
 		flush_rewrite_rules();
 
 		// Delete all data and cron schedules related to this.
-		delete_transient( 'crawler_info' );
+		delete_transient( 'wpmedia_crawler_info' );
 		delete_option( 'wpmedia_crawler_started' );
 		wp_clear_scheduled_hook( 'crawler_task' );
 		// Delete sitemap.html file.
